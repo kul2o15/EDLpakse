@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReportDataSet" targetNamespace="http://tempuri.org/ReportDataSet.xsd" xmlns:mstns="http://tempuri.org/ReportDataSet.xsd" xmlns="http://tempuri.org/ReportDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="EDLpakseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="EDLpakseConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.EDLpakse.Properties.Settings.GlobalReference.Default.EDLpakseConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="EDLpakseConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="EDLpakseConnectionString2 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.EDLpakse.Properties.Settings.GlobalReference.Default.EDLpakseConnectionString2" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReportDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ReportDataSet" msprop:Generator_UserDSName="ReportDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="EmpSearch" msprop:Generator_TableClassName="EmpSearchDataTable" msprop:Generator_TableVarName="tableEmpSearch" msprop:Generator_RowChangedName="EmpSearchRowChanged" msprop:Generator_TablePropName="EmpSearch" msprop:Generator_RowDeletingName="EmpSearchRowDeleting" msprop:Generator_RowChangingName="EmpSearchRowChanging" msprop:Generator_RowEvHandlerName="EmpSearchRowChangeEventHandler" msprop:Generator_RowDeletedName="EmpSearchRowDeleted" msprop:Generator_RowClassName="EmpSearchRow" msprop:Generator_UserTableName="EmpSearch" msprop:Generator_RowEvArgName="EmpSearchRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ລະຫັດພະນັກງານ" msprop:Generator_ColumnVarNameInTable="columnລະຫັດພະນັກງານ" msprop:Generator_ColumnPropNameInRow="ລະຫັດພະນັກງານ" msprop:Generator_ColumnPropNameInTable="ລະຫັດພະນັກງານColumn" msprop:Generator_UserColumnName="ລະຫັດພະນັກງານ" type="xs:decimal" />
+              <xs:element name="ຊື່ແລະນາມສະກຸນ" msprop:Generator_ColumnVarNameInTable="columnຊື່ແລະນາມສະກຸນ" msprop:Generator_ColumnPropNameInRow="ຊື່ແລະນາມສະກຸນ" msprop:Generator_ColumnPropNameInTable="ຊື່ແລະນາມສະກຸນColumn" msprop:Generator_UserColumnName="ຊື່ແລະນາມສະກຸນ" type="xs:string" minOccurs="0" />
+              <xs:element name="ພະແນກ" msprop:Generator_ColumnVarNameInTable="columnພະແນກ" msprop:Generator_ColumnPropNameInRow="ພະແນກ" msprop:Generator_ColumnPropNameInTable="ພະແນກColumn" msprop:Generator_UserColumnName="ພະແນກ" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0EDC_່ວຍງານ" msprop:Generator_ColumnVarNameInTable="columnໜ່ວຍງານ" msprop:Generator_ColumnPropNameInRow="ໜ່ວຍງານ" msprop:Generator_ColumnPropNameInTable="ໜ່ວຍງານColumn" msprop:Generator_UserColumnName="ໜ່ວຍງານ" type="xs:string" minOccurs="0" />
+              <xs:element name="ຕຳແ_x0EDC_່ງ" msprop:Generator_ColumnVarNameInTable="columnຕຳແໜ່ງ" msprop:Generator_ColumnPropNameInRow="ຕຳແໜ່ງ" msprop:Generator_ColumnPropNameInTable="ຕຳແໜ່ງColumn" msprop:Generator_UserColumnName="ຕຳແໜ່ງ" type="xs:string" minOccurs="0" />
+              <xs:element name="ສາມາດລາພັກໄດ້" msprop:Generator_ColumnVarNameInTable="columnສາມາດລາພັກໄດ້" msprop:Generator_ColumnPropNameInRow="ສາມາດລາພັກໄດ້" msprop:Generator_ColumnPropNameInTable="ສາມາດລາພັກໄດ້Column" msprop:Generator_UserColumnName="ສາມາດລາພັກໄດ້" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ActivityTemp" msprop:Generator_TableClassName="ActivityTempDataTable" msprop:Generator_TableVarName="tableActivityTemp" msprop:Generator_TablePropName="ActivityTemp" msprop:Generator_RowDeletingName="ActivityTempRowDeleting" msprop:Generator_RowChangingName="ActivityTempRowChanging" msprop:Generator_RowEvHandlerName="ActivityTempRowChangeEventHandler" msprop:Generator_RowDeletedName="ActivityTempRowDeleted" msprop:Generator_UserTableName="ActivityTemp" msprop:Generator_RowChangedName="ActivityTempRowChanged" msprop:Generator_RowEvArgName="ActivityTempRowChangeEvent" msprop:Generator_RowClassName="ActivityTempRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ລະຫັດ" msdata:Caption="ລະຫັດພະນັກງານ" msprop:Generator_ColumnVarNameInTable="columnລະຫັດ" msprop:Generator_ColumnPropNameInRow="ລະຫັດ" msprop:Generator_ColumnPropNameInTable="ລະຫັດColumn" msprop:Generator_UserColumnName="ລະຫັດ" type="xs:decimal" />
+              <xs:element name="ຊື່ກິດຈະກຳ" msdata:Caption="ຊື່ແລະນາມສະກຸນ" msprop:Generator_ColumnVarNameInTable="columnຊື່ກິດຈະກຳ" msprop:Generator_ColumnPropNameInRow="ຊື່ກິດຈະກຳ" msprop:Generator_ColumnPropNameInTable="ຊື່ກິດຈະກຳColumn" msprop:Generator_UserColumnName="ຊື່ກິດຈະກຳ" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ActivityInput" msprop:Generator_TableClassName="ActivityInputDataTable" msprop:Generator_TableVarName="tableActivityInput" msprop:Generator_RowChangedName="ActivityInputRowChanged" msprop:Generator_TablePropName="ActivityInput" msprop:Generator_RowDeletingName="ActivityInputRowDeleting" msprop:Generator_RowChangingName="ActivityInputRowChanging" msprop:Generator_RowEvHandlerName="ActivityInputRowChangeEventHandler" msprop:Generator_RowDeletedName="ActivityInputRowDeleted" msprop:Generator_RowClassName="ActivityInputRow" msprop:Generator_UserTableName="ActivityInput" msprop:Generator_RowEvArgName="ActivityInputRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ລະຫັດພະນັກງານ" msprop:Generator_ColumnVarNameInTable="columnລະຫັດພະນັກງານ" msprop:Generator_ColumnPropNameInRow="ລະຫັດພະນັກງານ" msprop:Generator_ColumnPropNameInTable="ລະຫັດພະນັກງານColumn" msprop:Generator_UserColumnName="ລະຫັດພະນັກງານ" type="xs:decimal" />
+              <xs:element name="ຊື່ແລະນາມສະກຸນ" msprop:Generator_ColumnVarNameInTable="columnຊື່ແລະນາມສະກຸນ" msprop:Generator_ColumnPropNameInRow="ຊື່ແລະນາມສະກຸນ" msprop:Generator_ColumnPropNameInTable="ຊື່ແລະນາມສະກຸນColumn" msprop:Generator_UserColumnName="ຊື່ແລະນາມສະກຸນ" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ActivittReport" msprop:Generator_TableClassName="ActivittReportDataTable" msprop:Generator_TableVarName="tableActivittReport" msprop:Generator_TablePropName="ActivittReport" msprop:Generator_RowDeletingName="ActivittReportRowDeleting" msprop:Generator_RowChangingName="ActivittReportRowChanging" msprop:Generator_RowEvHandlerName="ActivittReportRowChangeEventHandler" msprop:Generator_RowDeletedName="ActivittReportRowDeleted" msprop:Generator_UserTableName="ActivittReport" msprop:Generator_RowChangedName="ActivittReportRowChanged" msprop:Generator_RowEvArgName="ActivittReportRowChangeEvent" msprop:Generator_RowClassName="ActivittReportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ລະຫັດພະນັກງານ" msprop:Generator_ColumnVarNameInTable="columnລະຫັດພະນັກງານ" msprop:Generator_ColumnPropNameInRow="ລະຫັດພະນັກງານ" msprop:Generator_ColumnPropNameInTable="ລະຫັດພະນັກງານColumn" msprop:Generator_UserColumnName="ລະຫັດພະນັກງານ" type="xs:decimal" />
+              <xs:element name="ຊື່ແລະນາມສະກຸນ" msprop:Generator_ColumnVarNameInTable="columnຊື່ແລະນາມສະກຸນ" msprop:Generator_ColumnPropNameInRow="ຊື່ແລະນາມສະກຸນ" msprop:Generator_ColumnPropNameInTable="ຊື່ແລະນາມສະກຸນColumn" msprop:Generator_UserColumnName="ຊື່ແລະນາມສະກຸນ" type="xs:string" minOccurs="0" />
+              <xs:element name="ພະແນກ" msprop:Generator_ColumnVarNameInTable="columnພະແນກ" msprop:Generator_ColumnPropNameInRow="ພະແນກ" msprop:Generator_ColumnPropNameInTable="ພະແນກColumn" msprop:Generator_UserColumnName="ພະແນກ" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0EDC_່ວຍງານ" msprop:Generator_ColumnVarNameInTable="columnໜ່ວຍງານ" msprop:Generator_ColumnPropNameInRow="ໜ່ວຍງານ" msprop:Generator_ColumnPropNameInTable="ໜ່ວຍງານColumn" msprop:Generator_UserColumnName="ໜ່ວຍງານ" type="xs:string" minOccurs="0" />
+              <xs:element name="ຕຳແ_x0EDC_່ງ" msprop:Generator_ColumnVarNameInTable="columnຕຳແໜ່ງ" msprop:Generator_ColumnPropNameInRow="ຕຳແໜ່ງ" msprop:Generator_ColumnPropNameInTable="ຕຳແໜ່ງColumn" msprop:Generator_UserColumnName="ຕຳແໜ່ງ" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:EmpSearch" />
+      <xs:field xpath="mstns:ລະຫັດພະນັກງານ" />
+    </xs:unique>
+    <xs:unique name="ActivityTemp_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ActivityTemp" />
+      <xs:field xpath="mstns:ລະຫັດ" />
+    </xs:unique>
+    <xs:unique name="ActivityInput_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ActivityInput" />
+      <xs:field xpath="mstns:ລະຫັດພະນັກງານ" />
+    </xs:unique>
+    <xs:unique name="ActivittReport_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ActivittReport" />
+      <xs:field xpath="mstns:ລະຫັດພະນັກງານ" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

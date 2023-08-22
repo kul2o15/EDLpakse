@@ -1,0 +1,187 @@
+﻿<Window x:Class="EDLpakse.DialogBox.InsertActivityDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EDLpakse"
+        mc:Ignorable="d"
+        Height="465.97" Width="1144.725" WindowStartupLocation="CenterScreen" Background="{StaticResource MenuItemSelectionFill}" Icon="/EDLpakse;component/ICON.ico" Loaded="Window_Loaded" >
+
+    <Grid  x:Name="LayoutRoot">
+
+        <Grid.DataContext>
+            <local:DataValidationClass/>
+        </Grid.DataContext>
+
+        <Grid  Background="{StaticResource ResourceKey=Glasskin}" Margin="11.725,60.5,0,0" HorizontalAlignment="Left" Width="308" Height="349" VerticalAlignment="Top">
+
+            <DataGrid x:Name="dataGrid" Margin="10,42,10,10" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ລະຫັດ" Binding="{Binding ລະຫັດ}"/>
+                    <DataGridTextColumn Header="ຊື່ກິດຈະກຳ" Binding="{Binding ຊື່ກິດຈະກຳ}"/>
+
+                    <DataGridTemplateColumn >
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button x:Name="BtnDel" Height="20" Width="68.2" Click="BtnDel_Click" >
+                                    <StackPanel>
+                                        <Image Source="../Image/Eraser.png" Height="20" Width="20"  />
+                                    </StackPanel>
+                                </Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+
+                <DataGrid.RowStyle>
+                    <Style TargetType="{x:Type DataGridRow}">
+                        <Setter Property="Background" Value="{StaticResource Glasskin}"/>
+                        <Setter Property="Foreground" Value="#FFCCD9DA"/>
+                    </Style>
+                </DataGrid.RowStyle>
+            </DataGrid>
+            <Label x:Name="label1_Copy16" Content="ລ່າສຸດ" HorizontalAlignment="Left" Width="52" Margin="10,10,0,312" FontSize="13.333"/>
+        </Grid>
+
+        <Grid Background="{StaticResource ResourceKey=Glasskin}" Margin="348.725,60.5,0,0" HorizontalAlignment="Left" Width="778" Height="349" VerticalAlignment="Top">
+
+            <Button x:Name="BtnSave" Content="ບັນທືກ" IsEnabled="{Binding IsValidSave3}" Margin="657.5,0,0,23" Click="BtnSave_Click" TabIndex="10" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="99"/>
+            <Label x:Name="label176" Content="ເພີ່ມກິດຈະກຳ" Height="39" VerticalAlignment="Top" Margin="181.5,-48,480.5,0" FontSize="20" Foreground="#FFFB7441" FontWeight="Bold"/>
+
+            <Label x:Name="label1_Copy6" Content="ຂໍລາແຕ່ວັນທີ່" HorizontalAlignment="Left" Width="95" Margin="21.5,89.5,0,0" FontSize="13.333" Height="30" VerticalAlignment="Top"/>
+            <ComboBox x:Name="comboBoxDay"   HorizontalAlignment="Right" Margin="0,91.5,582.5,0" Width="55" Foreground="#FFCCD9DA" FontSize="13.333" FontFamily="Phetsarath OT" Height="30" VerticalAlignment="Top" TabIndex="3" SelectedIndex="0">
+                <ComboBoxItem Content="1"/>
+                <ComboBoxItem Content="2"/>
+                <ComboBoxItem Content="3"/>
+                <ComboBoxItem Content="4"/>
+                <ComboBoxItem Content="5"/>
+                <ComboBoxItem Content="6"/>
+                <ComboBoxItem Content="7"/>
+                <ComboBoxItem Content="8"/>
+                <ComboBoxItem Content="9"/>
+                <ComboBoxItem Content="10"/>
+                <ComboBoxItem Content="11"/>
+                <ComboBoxItem Content="12"/>
+                <ComboBoxItem Content="13"/>
+                <ComboBoxItem Content="14"/>
+                <ComboBoxItem Content="15"/>
+                <ComboBoxItem Content="16"/>
+                <ComboBoxItem Content="17"/>
+                <ComboBoxItem Content="18"/>
+                <ComboBoxItem Content="19"/>
+                <ComboBoxItem Content="20"/>
+                <ComboBoxItem Content="21"/>
+                <ComboBoxItem Content="22"/>
+                <ComboBoxItem Content="23"/>
+                <ComboBoxItem Content="24"/>
+                <ComboBoxItem Content="25"/>
+                <ComboBoxItem Content="26"/>
+                <ComboBoxItem Content="27"/>
+                <ComboBoxItem Content="28"/>
+                <ComboBoxItem Content="29"/>
+                <ComboBoxItem Content="30"/>
+                <ComboBoxItem Content="31"/>
+            </ComboBox>
+            <ComboBox x:Name="comboBoxMonth"   HorizontalAlignment="Right" Margin="0,91.5,511.5,0" Width="53" Foreground="#FFCCD9DA" FontSize="13.333" FontFamily="Phetsarath OT" Height="30" VerticalAlignment="Top" TabIndex="3" SelectedIndex="0">
+                <ComboBoxItem Content="1"/>
+                <ComboBoxItem Content="2"/>
+                <ComboBoxItem Content="3"/>
+                <ComboBoxItem Content="4"/>
+                <ComboBoxItem Content="5"/>
+                <ComboBoxItem Content="6"/>
+                <ComboBoxItem Content="7"/>
+                <ComboBoxItem Content="8"/>
+                <ComboBoxItem Content="9"/>
+                <ComboBoxItem Content="10"/>
+                <ComboBoxItem Content="11"/>
+                <ComboBoxItem Content="12"/>
+            </ComboBox>
+            <ComboBox x:Name="comboBoxYear"   HorizontalAlignment="Right" Margin="0,91.5,421.5,0" Width="72" Foreground="#FFCCD9DA" FontSize="13.333" FontFamily="Phetsarath OT" Height="30" VerticalAlignment="Top" TabIndex="3" SelectedIndex="0">
+                <ComboBoxItem Content="2016"/>
+                <ComboBoxItem Content="2017"/>
+                <ComboBoxItem Content="2018"/>
+                <ComboBoxItem Content="2019"/>
+                <ComboBoxItem Content="2020"/>
+                <ComboBoxItem Content="2021"/>
+                <ComboBoxItem Content="2022"/>
+                <ComboBoxItem Content="2023"/>
+                <ComboBoxItem Content="2024"/>
+                <ComboBoxItem Content="2025"/>
+                <ComboBoxItem Content="2026"/>
+            </ComboBox>
+
+            <Label x:Name="label1" Content="ຈົນຮອດວັນທີ່" HorizontalAlignment="Left" Width="94" Margin="441.5,93.5,0,0" FontSize="13.333" Height="30" VerticalAlignment="Top"/>
+            <ComboBox x:Name="comboBoxEDay"   HorizontalAlignment="Right" Margin="0,91.5,182.5,0" Width="55" Foreground="#FFCCD9DA" FontSize="13.333" FontFamily="Phetsarath OT" Height="30" VerticalAlignment="Top" TabIndex="3" SelectedIndex="0">
+                <ComboBoxItem Content="ບໍ່ກຳນົດ"/>
+                <ComboBoxItem Content="1"/>
+                <ComboBoxItem Content="2"/>
+                <ComboBoxItem Content="3"/>
+                <ComboBoxItem Content="4"/>
+                <ComboBoxItem Content="5"/>
+                <ComboBoxItem Content="6"/>
+                <ComboBoxItem Content="7"/>
+                <ComboBoxItem Content="8"/>
+                <ComboBoxItem Content="9"/>
+                <ComboBoxItem Content="10"/>
+                <ComboBoxItem Content="11"/>
+                <ComboBoxItem Content="12"/>
+                <ComboBoxItem Content="13"/>
+                <ComboBoxItem Content="14"/>
+                <ComboBoxItem Content="15"/>
+                <ComboBoxItem Content="16"/>
+                <ComboBoxItem Content="17"/>
+                <ComboBoxItem Content="18"/>
+                <ComboBoxItem Content="19"/>
+                <ComboBoxItem Content="20"/>
+                <ComboBoxItem Content="21"/>
+                <ComboBoxItem Content="22"/>
+                <ComboBoxItem Content="23"/>
+                <ComboBoxItem Content="24"/>
+                <ComboBoxItem Content="25"/>
+                <ComboBoxItem Content="26"/>
+                <ComboBoxItem Content="27"/>
+                <ComboBoxItem Content="28"/>
+                <ComboBoxItem Content="29"/>
+                <ComboBoxItem Content="30"/>
+                <ComboBoxItem Content="31"/>
+            </ComboBox>
+            <ComboBox x:Name="comboBoxEMonth"   HorizontalAlignment="Right" Margin="0,91.5,112.5,0" Width="53" Foreground="#FFCCD9DA" FontSize="13.333" FontFamily="Phetsarath OT" Height="30" VerticalAlignment="Top" TabIndex="3" SelectedIndex="0">
+                <ComboBoxItem Content="ບໍ່ກຳນົດ"/>
+                <ComboBoxItem Content="1"/>
+                <ComboBoxItem Content="2"/>
+                <ComboBoxItem Content="3"/>
+                <ComboBoxItem Content="4"/>
+                <ComboBoxItem Content="5"/>
+                <ComboBoxItem Content="6"/>
+                <ComboBoxItem Content="7"/>
+                <ComboBoxItem Content="8"/>
+                <ComboBoxItem Content="9"/>
+                <ComboBoxItem Content="10"/>
+                <ComboBoxItem Content="11"/>
+                <ComboBoxItem Content="12"/>
+            </ComboBox>
+            <ComboBox x:Name="comboBoxEYear"   HorizontalAlignment="Right" Margin="0,91.5,21.5,0" Width="73" Foreground="#FFCCD9DA" FontSize="13.333" FontFamily="Phetsarath OT" Height="30" VerticalAlignment="Top" TabIndex="3" SelectedIndex="0">
+                <ComboBoxItem Content="ບໍ່ກຳນົດ"/>
+                <ComboBoxItem Content="2016"/>
+                <ComboBoxItem Content="2017"/>
+                <ComboBoxItem Content="2018"/>
+                <ComboBoxItem Content="2019"/>
+                <ComboBoxItem Content="2020"/>
+                <ComboBoxItem Content="2021"/>
+                <ComboBoxItem Content="2022"/>
+                <ComboBoxItem Content="2023"/>
+                <ComboBoxItem Content="2024"/>
+                <ComboBoxItem Content="2025"/>
+                <ComboBoxItem Content="2026"/>
+            </ComboBox>
+
+            <TextBox x:Name="txtNote" Margin="140.5,153.5,0,133.5" TextWrapping="Wrap" TabIndex="23" HorizontalAlignment="Left" Width="616"/>
+            <Label x:Name="label1_Copy12" Content="ລາຍລະອຽດ" HorizontalAlignment="Left" Width="94" Margin="22.5,153.5,0,165.5" FontSize="13.333"/>
+            <TextBox x:Name="txtName" Text="{Binding NameAc, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" Height="30" Margin="140.5,36.5,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" HorizontalAlignment="Left" Width="216"  TabIndex="19"/>
+            <Label x:Name="label1_Copy" Content="ຊື່ກິດຈະກຳ" HorizontalAlignment="Left" Width="94" Margin="22.5,36.5,0,0" FontSize="13.333" Height="30" VerticalAlignment="Top"/>
+
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="48" Margin="1096,552,0,0" VerticalAlignment="Top" Width="54"/>
+
+    </Grid>
+</Window>

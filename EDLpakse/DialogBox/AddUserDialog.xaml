@@ -1,0 +1,23 @@
+﻿<Window x:Class="EDLpakse.DialogBox.AddUserDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EDLpakse.DialogBox"
+        mc:Ignorable="d"
+        Height="337" Width="300" WindowStartupLocation="CenterScreen" Background="{StaticResource MenuItemSelectionFill}" Icon="/EDLpakse;component/ICON.ico" Loaded="Window_Loaded" WindowStyle="ToolWindow" ResizeMode="NoResize">
+    <Grid>
+        <TextBox x:Name="txtPass" Margin="58,194,62,0" TextWrapping="Wrap" Text="" TabIndex="2" Height="28" VerticalAlignment="Top"  TextAlignment="Left" Visibility="Hidden"/>
+        <Label x:Name="label" Content="ລະຫັດຜ່ານ" Margin="58,165,0,0" Height="29" VerticalAlignment="Top" HorizontalAlignment="Left" Width="97"/>
+        <CheckBox x:Name="checkBox" Content="ເບິ່ງລະຫັດ" HorizontalAlignment="Left" Margin="58,227,0,0" VerticalAlignment="Top" Checked="checkBox_Checked" Unchecked="checkBox_Unchecked" />
+        <PasswordBox x:Name="Pass" Margin="58,194,62,0" VerticalAlignment="Top" Height="28"  TabIndex="2"/>
+        <Button x:Name="OK" Content="OK" Margin="86,0,0,10"  Click="OK_Click" HorizontalAlignment="Left" Width="122" Height="30" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="txtUser" Margin="58,127,62,0" TextWrapping="Wrap" Text="" TabIndex="1" Height="28" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy" Content="ຊື່ຜູ່ໃຊ້" Margin="58,98,0,0" Height="29" VerticalAlignment="Top" HorizontalAlignment="Left" Width="46"/>
+        <ComboBox x:Name="comboBoxAuth" TabIndex="15"  Margin="58,60,62,0" FontFamily="Phetsarath OT" FontSize="13.333" Foreground="#FFCCD9DA" Height="26" VerticalAlignment="Top" SelectedIndex="0">
+            <ComboBoxItem Content="ພະນັກງານທົ່ວໄປ"/>
+            <ComboBoxItem Content="ພະນັກງານຜູ້ບັນທຶກຂໍ້ມູນ"/>
+        </ComboBox>
+        <Label x:Name="label1_Copy11" Content="ສິດເຂົ້າໃຊ້" HorizontalAlignment="Left" Width="79" Margin="58,30,0,0" FontSize="16" Height="30" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

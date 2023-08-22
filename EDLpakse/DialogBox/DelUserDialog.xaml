@@ -1,0 +1,16 @@
+﻿<Window x:Class="EDLpakse.DialogBox.DelUserDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EDLpakse.DialogBox"
+        mc:Ignorable="d"
+        Height="195.511" Width="300" WindowStartupLocation="CenterScreen" Background="{StaticResource MenuItemSelectionFill}" Icon="/EDLpakse;component/ICON.ico" Loaded="Window_Loaded" WindowStyle="ToolWindow" ResizeMode="NoResize">
+    <Grid>
+        
+        <Button x:Name="OK" Content="ລົບ" Margin="84,0,0,10"  Click="OK_Click" HorizontalAlignment="Left" Width="122" Height="30" VerticalAlignment="Bottom"/>
+        <ComboBox x:Name="comboBoxUser"  TabIndex="15"  Margin="58,60,0,0" FontFamily="Phetsarath OT" FontSize="13.333" Foreground="#FFCCD9DA" Height="26" VerticalAlignment="Top" HorizontalAlignment="Left" Width="174" SelectedIndex="0"/>
+        <Label x:Name="label1_Copy11" Content="ຜູ່ໃຊ້" HorizontalAlignment="Left" Width="79" Margin="58,30,0,0" FontSize="16" Height="30" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

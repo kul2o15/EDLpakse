@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="EDLpakse" Class="EDLpakseDataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=JO\SQLEXPRESS;Initial Catalog=EDLpakse;User ID=sa" SettingsObjectName="EDLpakse.Properties.Settings" SettingsPropertyName="EDLpakseConnectionString2" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.T_Activity" Member="T_Activities">
+    <Type Name="T_Activity">
+      <Column Name="Activity_ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Activity" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Activity_When" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Activity_End" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Activity_Detail" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_Auth" Member="T_Auths">
+    <Type Name="T_Auth">
+      <Column Name="[Index]" Member="Index" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="User_ID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="User_Passward" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="User_Level" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_Country" Member="T_Countries">
+    <Type Name="T_Country">
+      <Column Name="Country_ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Country" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_Culture" Member="T_Cultures">
+    <Type Name="T_Culture">
+      <Column Name="Culture_ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Culture" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_Department" Member="T_Departments">
+    <Type Name="T_Department">
+      <Column Name="Department_ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Departmen" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_Education" Member="T_Educations">
+    <Type Name="T_Education">
+      <Column Name="Education_ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Education" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Education_Level" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_Employee" Member="T_Employees">
+    <Type Name="T_Employee">
+      <Column Name="[Index]" Member="Index" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Employee_ID" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Education_ID" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Culture_ID" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Staff_ID" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Position_ID" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Department_ID" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Unit_ID" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Country_ID" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Photo" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="WorkExperial" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="StartWork_Date" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EndWork_Date" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Vacation" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Titile_ID" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_Kind_staff" Member="T_Kind_staffs">
+    <Type Name="T_Kind_staff">
+      <Column Name="Staff_ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Staff_Kind" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_Position" Member="T_Positions">
+    <Type Name="T_Position">
+      <Column Name="Position_ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Position" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Position_Salary" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Position_Salary_Old" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_Title" Member="T_Titles">
+    <Type Name="T_Title">
+      <Column Name="Title_ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_Unit" Member="T_Units">
+    <Type Name="T_Unit">
+      <Column Name="Unit_ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Unit" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_Vacation_Info" Member="T_Vacation_Infos">
+    <Type Name="T_Vacation_Info">
+      <Column Name="[Index]" Member="Index" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Employee_ID" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Vacation_Info" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Vacation_Start" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Vacation_End" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Vacation_Howlong" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_Participate" Member="T_Participates">
+    <Type Name="T_Participate">
+      <Column Name="[Index]" Member="Index" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Activity_ID" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Employee_ID" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

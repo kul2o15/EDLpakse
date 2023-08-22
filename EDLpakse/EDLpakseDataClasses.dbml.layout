@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="EDLpakseDataClasses">
+  <DataContextMoniker Name="/EDLpakseDataClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="a42eb5e4-957a-4afa-9d35-133afac71a77" isExpanded="false" absoluteBounds="5.75, 3.75, 2, 0.45">
+      <DataClassMoniker Name="/EDLpakseDataClassesDataContext/T_Activity" />
+      <nestedChildShapes>
+        <elementListCompartment Id="999a78bc-8adf-443d-a863-56e733f2bf9c" absoluteBounds="5.765, 4.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="965a5e90-4dc3-48ee-a209-e809e8b81fff" isExpanded="false" absoluteBounds="6.125, 5.25, 2, 0.45">
+      <DataClassMoniker Name="/EDLpakseDataClassesDataContext/T_Auth" />
+      <nestedChildShapes>
+        <elementListCompartment Id="49104542-6747-4fce-b4b7-80cf1884902c" absoluteBounds="6.1400000000000006, 5.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dd635be2-3cc6-4240-a2d2-d29883e349e6" isExpanded="false" absoluteBounds="3.125, 4, 2, 0.45">
+      <DataClassMoniker Name="/EDLpakseDataClassesDataContext/T_Country" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5b0bb96c-7711-44d8-aa5c-79e9a9cc3b94" absoluteBounds="3.14, 4.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f665d8f6-abf5-4e50-8b6f-d0b087ddc2c8" isExpanded="false" absoluteBounds="2.875, 4.875, 2, 0.45">
+      <DataClassMoniker Name="/EDLpakseDataClassesDataContext/T_Culture" />
+      <nestedChildShapes>
+        <elementListCompartment Id="89e86603-5857-422f-bc1a-4183d7d323f9" absoluteBounds="2.89, 5.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d95d3b4b-a7cc-4ba1-a2f0-be5f7e8b32f8" isExpanded="false" absoluteBounds="0.75, 3.875, 2, 0.45">
+      <DataClassMoniker Name="/EDLpakseDataClassesDataContext/T_Department" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9a873270-4d83-4085-88e8-516a0c8331e8" absoluteBounds="0.76500000000000012, 4.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="42119477-292a-4f1f-97df-4d8971f8cfeb" isExpanded="false" absoluteBounds="0.5, 4.625, 2, 0.45">
+      <DataClassMoniker Name="/EDLpakseDataClassesDataContext/T_Education" />
+      <nestedChildShapes>
+        <elementListCompartment Id="02c7a482-ec24-4bb2-94ca-847016037c05" absoluteBounds="0.515, 5.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4d742d76-5b58-4e5d-a3ae-7fd7448ed31f" isExpanded="false" absoluteBounds="3, 7.5, 2, 0.45">
+      <DataClassMoniker Name="/EDLpakseDataClassesDataContext/T_Employee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0cb7b6d9-12c6-45a0-8dfa-df92a58f49c2" absoluteBounds="3.015, 7.96, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5fe70735-8290-47af-83f5-7e1b0b9e5248" isExpanded="false" absoluteBounds="3.75, 6.125, 2, 0.45">
+      <DataClassMoniker Name="/EDLpakseDataClassesDataContext/T_Kind_staff" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b9661fc9-129f-452a-b2cf-b7b200dc36a6" absoluteBounds="3.765, 6.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="265b8149-1a32-43a0-bba9-3c7e77338d7b" isExpanded="false" absoluteBounds="0.75, 6.375, 2, 0.45">
+      <DataClassMoniker Name="/EDLpakseDataClassesDataContext/T_Position" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a6376ee0-7dea-4dce-8d9d-f5558365f60f" absoluteBounds="0.765, 6.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="116f2802-03ac-460c-b71a-8c5ad134880b" isExpanded="false" absoluteBounds="0.5, 3.125, 2, 0.45">
+      <DataClassMoniker Name="/EDLpakseDataClassesDataContext/T_Title" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e34707e3-f02e-42e7-ac5c-ab99b1539461" absoluteBounds="0.515, 3.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5b101809-cf08-453b-850f-974652d4a9e4" isExpanded="false" absoluteBounds="0.625, 5.375, 2, 0.45">
+      <DataClassMoniker Name="/EDLpakseDataClassesDataContext/T_Unit" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3175c20c-5fca-4dad-93a8-5fd8b6dce2bb" absoluteBounds="0.64, 5.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9cc57ca7-ff64-4abb-a1bb-5c54001cce32" isExpanded="false" absoluteBounds="5.75, 7.375, 2, 0.45">
+      <DataClassMoniker Name="/EDLpakseDataClassesDataContext/T_Vacation_Info" />
+      <nestedChildShapes>
+        <elementListCompartment Id="015dd0da-57df-4eec-b440-7991e318134e" absoluteBounds="5.765, 7.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8115edd9-f6c9-4f82-af80-5e7e67e2471e" absoluteBounds="3.125, 1.375, 2, 1.3862939453125">
+      <DataClassMoniker Name="/EDLpakseDataClassesDataContext/T_Participate" />
+      <nestedChildShapes>
+        <elementListCompartment Id="703aadea-3f58-48d4-b8d6-407990572b73" absoluteBounds="3.14, 1.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

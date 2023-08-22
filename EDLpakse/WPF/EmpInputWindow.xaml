@@ -1,0 +1,233 @@
+﻿<Window x:Class="EDLpakse.WPF.EmpInputWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EDLpakse"
+        mc:Ignorable="d"
+         Title="EDLpakseManage v0.1" Background="{StaticResource WinSkin}"  ResizeMode="CanResizeWithGrip" WindowStartupLocation="CenterScreen" Icon="/EDLpakse;component/ICON.ico" Width="1322.676" Height="738.35" Loaded="Window_Loaded" Closed="Window_Closed"
+        WindowState="Maximized" SizeToContent="Manual">
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush  ImageSource="../Image/noise.png" Viewport="0,0 128,128" ViewportUnits="Absolute" TileMode="Tile" Opacity="0.3" />
+        </Grid.Background>
+
+        <Grid.DataContext>
+            <local:DataValidationClass/>
+        </Grid.DataContext>
+
+        <Grid x:Name="Logo" HorizontalAlignment="Center" Width="1315" Height="707" VerticalAlignment="Center">
+            <Grid.Background>
+                <ImageBrush ImageSource="../Image/Logo.png" Stretch="None" Opacity="0.3" />
+            </Grid.Background>
+        </Grid>
+
+        <Grid Height="39.583" Margin="539.684,5.216,444.166,0" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <Label x:Name="label16_1y" Content="ຂໍ້ມູນພະນັກງານ" FontSize="20" Foreground="#FFFB7441" FontWeight="Bold" />
+            <Rectangle Style="{StaticResource GroupGlass}">
+                <Rectangle.Effect>
+                    <DropShadowEffect/>
+                </Rectangle.Effect>
+            </Rectangle>
+        </Grid>
+
+        <Grid Margin="11,61,0,338.35" HorizontalAlignment="Left" Width="207">
+            <Rectangle Style="{StaticResource GroupGlass}">
+                <Rectangle.Effect>
+                    <DropShadowEffect/>
+                </Rectangle.Effect>
+            </Rectangle>
+            <Image x:Name="image" Margin="10,10,9,38" Source="../Image/DefaultImage.jpg" Stretch="Fill"/>
+            <Button x:Name="BtnInsertPic" Content="ເພີ່ມຮູບ" Height="23" Margin="19,0,0,10" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="75" Click="BtnInsertPic_Click"/>
+            <Button x:Name="BtnDelPic" Content="ລົບຮູບ" Height="23" HorizontalAlignment="Right" Width="75" Margin="0,0,19,10" VerticalAlignment="Bottom" Click="BtnDelPic_Click"/>
+        </Grid>
+
+        <Grid Margin="243,61,0,0" HorizontalAlignment="Left" Width="935" Height="621" VerticalAlignment="Top">
+            <Rectangle Style="{StaticResource GroupGlass}" >
+                <Rectangle.Effect>
+                    <DropShadowEffect/>
+                </Rectangle.Effect>
+            </Rectangle>
+
+            <ComboBox x:Name="comboBoxTitleName"  Height="30" Margin="159,75,0,0" VerticalAlignment="Top" Foreground="#FFCCD9DA" FontSize="13.333" FontFamily="Phetsarath OT"
+             HorizontalAlignment="Left" Width="263" TabIndex="16" SelectedIndex="0"/>
+
+            <TextBox x:Name="txtidemp" Text="{Binding IdEmp, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}"  Height="30" Margin="159,24,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" HorizontalAlignment="Left" Width="263"  TabIndex="19"/>
+            <Label x:Name="label1_Copy8" Content="ນາມມະຍົດ" HorizontalAlignment="Left" Width="72" Margin="21,75,0,0" FontSize="13.333" Height="30" VerticalAlignment="Top"/>
+            <Label x:Name="label1_Copy9" Content="ເລກລະຫັດ ຟຟລ" HorizontalAlignment="Left" Width="116" Margin="21,24,0,0" FontSize="13.333" Height="30" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtName" Text="{Binding NameEmp, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" Height="30" Margin="159,122.334,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" HorizontalAlignment="Left" Width="263"  TabIndex="19"/>
+            <Label x:Name="label1_Copy" Content="ຊື່" HorizontalAlignment="Left" Width="116" Margin="21,122.334,0,0" FontSize="13.333" Height="30" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtSurname" Text="{Binding SurnameEmp, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}"  Height="30" Margin="159,175,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" HorizontalAlignment="Left" Width="263"  TabIndex="19"/>
+            <Label x:Name="label1_Copy1" Content="ນາມສະກຸນ" HorizontalAlignment="Left" Width="116" Margin="21,175,0,0" FontSize="13.333" Height="30" VerticalAlignment="Top"/>
+            <ComboBox x:Name="comboBoxCulture"  Height="30" Margin="159,223,0,0" VerticalAlignment="Top" Foreground="#FFCCD9DA" FontSize="13.333" FontFamily="Phetsarath OT" HorizontalAlignment="Left" Width="263" TabIndex="16" SelectedIndex="0"/>
+
+            <Label x:Name="label1_Copy2" Content="ລະດັບວັດທະນະທຳ" HorizontalAlignment="Left" Width="116" Margin="21,223,0,0" FontSize="13.333" Height="30" VerticalAlignment="Top"/>
+            <ComboBox x:Name="comboBoxEducation"  Height="30" Margin="159,273,0,0" VerticalAlignment="Top" Foreground="#FFCCD9DA" FontSize="13.333" FontFamily="Phetsarath OT" HorizontalAlignment="Left" Width="263" TabIndex="16" SelectedIndex="0" d:LayoutOverrides="VerticalAlignment"/>
+
+            <Label x:Name="label1_Copy3" Content="ລະດັບການສຶກສາ" HorizontalAlignment="Left" Width="116" Margin="21,273,0,0" FontSize="13.333" Height="30" VerticalAlignment="Top" d:LayoutOverrides="VerticalAlignment"/>
+            <ComboBox x:Name="comboBoxFrom"  Height="30" Margin="159,323.667,0,0" VerticalAlignment="Top" Foreground="#FFCCD9DA" FontSize="13.333" FontFamily="Phetsarath OT" HorizontalAlignment="Left" Width="263" TabIndex="16" SelectedIndex="0"/>
+
+            <Label x:Name="label1_Copy4" Content="ຈົບມາຈາກ" HorizontalAlignment="Left" Width="116" Margin="21,323.667,0,0" FontSize="13.333" Height="30" VerticalAlignment="Top"/>
+            <ComboBox x:Name="comboBoxStatus"  Height="30" Margin="159,376,0,0" VerticalAlignment="Top" Foreground="#FFCCD9DA" FontSize="13.333" FontFamily="Phetsarath OT" HorizontalAlignment="Left" Width="263" TabIndex="16" SelectedIndex="0"/>
+
+            <Label x:Name="label1_Copy5" Content="ສະຖານະ" HorizontalAlignment="Left" Width="116" Margin="21,376,0,0" FontSize="13.333" Height="30" VerticalAlignment="Top"/>
+
+            <ComboBox x:Name="comboBoxDay"   HorizontalAlignment="Right" Margin="0,0,709,163.667" Width="67" Foreground="#FFCCD9DA" FontSize="13.333" FontFamily="Phetsarath OT" Height="30" VerticalAlignment="Bottom" TabIndex="3" SelectedIndex="0">
+                <ComboBoxItem Content="1"/>
+                <ComboBoxItem Content="2"/>
+                <ComboBoxItem Content="3"/>
+                <ComboBoxItem Content="4"/>
+                <ComboBoxItem Content="5"/>
+                <ComboBoxItem Content="6"/>
+                <ComboBoxItem Content="7"/>
+                <ComboBoxItem Content="8"/>
+                <ComboBoxItem Content="9"/>
+                <ComboBoxItem Content="10"/>
+                <ComboBoxItem Content="11"/>
+                <ComboBoxItem Content="12"/>
+                <ComboBoxItem Content="13"/>
+                <ComboBoxItem Content="14"/>
+                <ComboBoxItem Content="15"/>
+                <ComboBoxItem Content="16"/>
+                <ComboBoxItem Content="17"/>
+                <ComboBoxItem Content="18"/>
+                <ComboBoxItem Content="19"/>
+                <ComboBoxItem Content="20"/>
+                <ComboBoxItem Content="21"/>
+                <ComboBoxItem Content="22"/>
+                <ComboBoxItem Content="23"/>
+                <ComboBoxItem Content="24"/>
+                <ComboBoxItem Content="25"/>
+                <ComboBoxItem Content="26"/>
+                <ComboBoxItem Content="27"/>
+                <ComboBoxItem Content="28"/>
+                <ComboBoxItem Content="29"/>
+                <ComboBoxItem Content="30"/>
+                <ComboBoxItem Content="31"/>
+            </ComboBox>
+
+            <ComboBox x:Name="comboBoxMonth"   HorizontalAlignment="Right" Margin="0,0,623,163.667" Width="64" Foreground="#FFCCD9DA" FontSize="13.333" FontFamily="Phetsarath OT" Height="30" VerticalAlignment="Bottom" TabIndex="3" SelectedIndex="0">
+                <ComboBoxItem Content="1"/>
+                <ComboBoxItem Content="2"/>
+                <ComboBoxItem Content="3"/>
+                <ComboBoxItem Content="4"/>
+                <ComboBoxItem Content="5"/>
+                <ComboBoxItem Content="6"/>
+                <ComboBoxItem Content="7"/>
+                <ComboBoxItem Content="8"/>
+                <ComboBoxItem Content="9"/>
+                <ComboBoxItem Content="10"/>
+                <ComboBoxItem Content="11"/>
+                <ComboBoxItem Content="12"/>
+            </ComboBox>
+
+            <ComboBox x:Name="comboBoxYear"   HorizontalAlignment="Right" Margin="0,0,513,163.667" Width="88" Foreground="#FFCCD9DA" FontSize="13.333" FontFamily="Phetsarath OT" Height="30" VerticalAlignment="Bottom" TabIndex="3" SelectedIndex="0">
+                <ComboBoxItem Content="1986"/>
+                <ComboBoxItem Content="1987"/>
+                <ComboBoxItem Content="1988"/>
+                <ComboBoxItem Content="1989"/>
+                <ComboBoxItem Content="1990"/>
+                <ComboBoxItem Content="1991"/>
+                <ComboBoxItem Content="1992"/>
+                <ComboBoxItem Content="1993"/>
+                <ComboBoxItem Content="1994"/>
+                <ComboBoxItem Content="1995"/>
+                <ComboBoxItem Content="1996"/>
+                <ComboBoxItem Content="1997"/>
+                <ComboBoxItem Content="1998"/>
+                <ComboBoxItem Content="1999"/>
+                <ComboBoxItem Content="2000"/>
+                <ComboBoxItem Content="2001"/>
+                <ComboBoxItem Content="2002"/>
+                <ComboBoxItem Content="2003"/>
+                <ComboBoxItem Content="2004"/>
+                <ComboBoxItem Content="2005"/>
+                <ComboBoxItem Content="2006"/>
+                <ComboBoxItem Content="2007"/>
+                <ComboBoxItem Content="2008"/>
+                <ComboBoxItem Content="2009"/>
+                <ComboBoxItem Content="2010"/>
+                <ComboBoxItem Content="2011"/>
+                <ComboBoxItem Content="2012"/>
+                <ComboBoxItem Content="2013"/>
+                <ComboBoxItem Content="2014"/>
+                <ComboBoxItem Content="2015"/>
+                <ComboBoxItem Content="2016"/>
+                <ComboBoxItem Content="2017"/>
+                <ComboBoxItem Content="2018"/>
+                <ComboBoxItem Content="2019"/>
+                <ComboBoxItem Content="2020"/>
+                <ComboBoxItem Content="2021"/>
+                <ComboBoxItem Content="2022"/>
+                <ComboBoxItem Content="2023"/>
+                <ComboBoxItem Content="2024"/>
+                <ComboBoxItem Content="2025"/>
+                <ComboBoxItem Content="2026"/>
+            </ComboBox>
+
+            <Label x:Name="label1_Copy6" Content="ວັນເຂົ້າການ" HorizontalAlignment="Left" Width="116" Margin="21,427.333,0,0" FontSize="13.333" Height="30" VerticalAlignment="Top"/>
+            <ComboBox x:Name="comboBoxDepartment"  Height="30" Margin="159,480.333,0,0" VerticalAlignment="Top" Foreground="#FFCCD9DA" FontSize="13.333" FontFamily="Phetsarath OT" HorizontalAlignment="Left" Width="263" TabIndex="16" SelectedIndex="0"/>
+
+            <Label x:Name="label1_Copy7" Content="ພະແນກງານ /ສູນ" HorizontalAlignment="Left" Width="116" Margin="21,480.333,0,0" FontSize="13.333" Height="30" VerticalAlignment="Top"/>
+            <ComboBox x:Name="comboBoxPosition"  Height="30" Margin="0,24.11,27,0" VerticalAlignment="Top" Foreground="#FFCCD9DA" FontSize="13.333" FontFamily="Phetsarath OT" HorizontalAlignment="Right" Width="263" TabIndex="16" SelectedIndex="0" d:LayoutOverrides="VerticalAlignment"/>
+
+            <Label x:Name="label1_Copy10" Content="ຕ່ຳແໜ່ງ" Margin="0,24.11,312,0" FontSize="13.333" Height="30" VerticalAlignment="Top" d:LayoutOverrides="VerticalAlignment" HorizontalAlignment="Right" Width="116"/>
+            <ComboBox x:Name="comboBoxUnit"  Height="30" Margin="0,75,27,0" VerticalAlignment="Top" Foreground="#FFCCD9DA" FontSize="13.333" FontFamily="Phetsarath OT" HorizontalAlignment="Right" Width="263" TabIndex="16" SelectedIndex="0"/>
+
+            <Label x:Name="label1_Copy11" Content="ໜ່ວຍງານ" Margin="0,75,312,0" FontSize="13.333" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Width="116"/>
+            <TextBox x:Name="txtNote" Margin="507,162,27,0" TextWrapping="Wrap" Height="348.333" VerticalAlignment="Top" TabIndex="23"/>
+            <Label x:Name="label1_Copy12" Content="ປະຫວັດການເຮັດວຽກ" HorizontalAlignment="Left" Width="120" Margin="507,127,0,0" FontSize="13.333" Height="30" VerticalAlignment="Top"/>
+            <Button x:Name="BtnSave" IsEnabled="{Binding IsValidSave}" Content="ບັນທືກ" Margin="0,0,27,18" HorizontalAlignment="Right" Width="99" Height="30" VerticalAlignment="Bottom" Click="BtnSave_Click" TabIndex="21"/>
+            <Button x:Name="BtnClear" Content="ລ້າງຂໍ້ຄວາມ" Margin="21,0,0,18" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="99" Click="BtnClear_Click"/>
+            <Button x:Name="BtnFirst" Margin="305.5,0,0,18" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="68.2" Click="BtnFirst_Click" >
+                <StackPanel>
+                    <Image Source="../Image/First.png" Height="20" Width="20"  />
+                </StackPanel>
+            </Button>
+            <Button x:Name="BtnPrevious"  Margin="390.578,0,0,18" Height="30" VerticalAlignment="Bottom"  HorizontalAlignment="Left" Width="68.2" Click="BtnPrevious_Click">
+                <StackPanel>
+                    <Image Source="../Image/previous.png" Height="20" Width="20"  />
+                </StackPanel>
+            </Button>
+            <Button x:Name="BtnNext"  Margin="0,0,390.8,18" Height="30" VerticalAlignment="Bottom"  HorizontalAlignment="Right" Width="68.2" Click="BtnNext_Click">
+                <StackPanel>
+                    <Image Source="../Image/Next.png" Height="20" Width="20"  />
+                </StackPanel>
+            </Button>
+            <Button x:Name="BtnLast"  Margin="0,0,312,18"  HorizontalAlignment="Right" Width="68.2" Click="BtnLast_Click" Height="30" VerticalAlignment="Bottom">
+                <StackPanel>
+                    <Image Source="../Image/Last.png" Height="20" Width="20"  />
+                </StackPanel>
+            </Button>
+
+        </Grid>
+
+        <Grid Margin="0,621.466,10,0" HorizontalAlignment="Right" Width="70" Height="59" VerticalAlignment="Top">
+            <Rectangle Style="{StaticResource GroupGlass}">
+                <Rectangle.Effect>
+                    <DropShadowEffect/>
+                </Rectangle.Effect>
+            </Rectangle>
+            <Button x:Name="btnBack" Content="ກັບໜ້າຫຼັກ" Click="btnBack_Click"/>
+        </Grid>
+
+        <Grid Margin="11,390.5,0,0" HorizontalAlignment="Left" Width="206" Height="291.5" VerticalAlignment="Top">
+            <Rectangle Style="{StaticResource GroupGlass}">
+                <Rectangle.Effect>
+                    <DropShadowEffect/>
+                </Rectangle.Effect>
+            </Rectangle>
+            <DataGrid x:Name="dataGrid" Margin="10,42,10,10">
+                <DataGrid.RowStyle>
+                    <Style TargetType="{x:Type DataGridRow}">
+                        <Setter Property="Background" Value="{StaticResource Glasskin}"/>
+                        <Setter Property="Foreground" Value="#FFCCD9DA"/>
+                    </Style>
+                </DataGrid.RowStyle>
+            </DataGrid>
+            <Label x:Name="label1_Copy16" Content="ລ່າສຸດ" HorizontalAlignment="Left" Width="52" Margin="10,10,0,254.5" FontSize="13.333"/>
+        </Grid>
+
+
+    </Grid>
+</Window>

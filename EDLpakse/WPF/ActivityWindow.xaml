@@ -1,0 +1,105 @@
+﻿<Window x:Class="EDLpakse.WPF.ActivityWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EDLpakse.WPF"
+        mc:Ignorable="d"
+        Height="759.433" Width="1231.35" Title="EDLpakseManage v0.1" Background="{StaticResource WinSkin}" WindowStartupLocation="CenterScreen" Icon="/EDLpakse;component/ICON.ico" Closed="Window_Closed"
+        WindowState="Maximized" SizeToContent="Manual" ResizeMode="NoResize">
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush  ImageSource="../Image/noise.png" Viewport="0,0 128,128" ViewportUnits="Absolute" TileMode="Tile" Opacity="0.3" />
+        </Grid.Background>
+
+        <Grid x:Name="Logo" HorizontalAlignment="Center" Width="1163" Height="718" VerticalAlignment="Center">
+            <Grid.Background>
+                <ImageBrush ImageSource="../Image/Logo.png" Stretch="None" Opacity="0.3" />
+            </Grid.Background>
+        </Grid>
+
+        <Grid Height="39.583" Margin="539.684,5.216,444.166,0" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <Label x:Name="label16_Copy" Content="ຜູ້ເຂົ້າຮູ້ກິດຈະກິດ" FontSize="20" Foreground="#FFFB7441" FontWeight="Bold" />
+            <Rectangle Style="{StaticResource GroupGlass}">
+                <Rectangle.Effect>
+                    <DropShadowEffect/>
+                </Rectangle.Effect>
+            </Rectangle>
+        </Grid>
+
+        <Grid Margin="110.675,62.933,100.675,0" Height="640.033" VerticalAlignment="Top" HorizontalAlignment="Center" Width="1014">
+            <Rectangle Style="{StaticResource GroupGlass}">
+                <Rectangle.Effect>
+                    <DropShadowEffect/>
+                </Rectangle.Effect>
+            </Rectangle>
+            <Grid Margin="228.5,95.066,433,28.5" Background="{StaticResource ResourceKey=Glasskin}">
+                <Label x:Name="label1df6" Content="ລາຍຊື່ພະນັກງານ" HorizontalAlignment="Left" Width="103" Margin="10,10,0,0" FontSize="14" Height="37.5" VerticalAlignment="Top" FontWeight="Bold"/>
+                <DataGrid x:Name="dataGrid"  AutoGenerateColumns="False" Margin="0,52.5,0,0">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ລະຫັດພະນັກງານ" Binding="{Binding ລະຫັດພະນັກງານ}"/>
+                        <DataGridTextColumn Header="ຊື່ ແລະ ນາມສະກຸນ" Binding="{Binding ຊື່ແລະນາມສະກຸນ}"/>
+                        <DataGridTemplateColumn >
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button x:Name="BtnIN" Content="IN" Height="20" Width="68.2" Click="BtnIn_Click"  Foreground="#FF38A62D"  FontWeight="Bold"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+
+                    </DataGrid.Columns>
+
+                    <DataGrid.RowStyle>
+                        <Style TargetType="{x:Type DataGridRow}">
+                            <Setter Property="Background" Value="{StaticResource Glasskin}"/>
+                            <Setter Property="Foreground" Value="#FFCCD9DA"/>
+                        </Style>
+                    </DataGrid.RowStyle>
+
+                </DataGrid>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Height="158.5" Margin="27,95.066,0,0" VerticalAlignment="Top" Width="172.5" Background="{StaticResource ResourceKey=Glasskin}">
+                <Label x:Name="label13Copy16" Content="ຄົ້ນຫາ" Margin="65.5,10,55,121.5" FontSize="14" FontWeight="Bold"/>
+                <Button x:Name="BtnDepart" Content="ພະແນກ" HorizontalAlignment="Right" Width="150" Click="BtnDepart_Click" Margin="0,57,12.5,69.5"/>
+                <Button x:Name="BtnUnit" Content="ໜ່ວຍງານ" HorizontalAlignment="Right" Width="150" Height="30" VerticalAlignment="Bottom" Click="BtnUnit_Click" Margin="0,0,10,10" />
+            </Grid>
+            <Grid HorizontalAlignment="Right" Margin="0,95.066,29.5,28.5" Width="349.5" Background="{StaticResource ResourceKey=Glasskin}">
+                <Label x:Name="label1df62" Content="ລາຍຊື່ຜູ້ເຂົ້າຮ່ວມກິດຈະກຳ" HorizontalAlignment="Left" Width="148" Margin="10,10,0,0" FontSize="14" Height="37.5" VerticalAlignment="Top" FontWeight="Bold"/>
+                <DataGrid x:Name="dataGrid2"  AutoGenerateColumns="False" d:LayoutOverrides="HorizontalAlignment" Margin="0,54,0,0">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ລະຫັດພະນັກງານ" Binding="{Binding ລະຫັດພະນັກງານ}"/>
+                        <DataGridTextColumn Header="ຊື່ ແລະ ນາມສະກຸນ" Binding="{Binding ຊື່ແລະນາມສະກຸນ}"/>
+                        <DataGridTemplateColumn >
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button x:Name="BtnOUT" Content="OUT" Height="20" Width="68.2" Click="BtnOut_Click" Foreground="#FFBF2720"  FontWeight="Bold"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+
+                    <DataGrid.RowStyle>
+                        <Style TargetType="{x:Type DataGridRow}">
+                            <Setter Property="Background" Value="{StaticResource Glasskin}"/>
+                            <Setter Property="Foreground" Value="#FFCCD9DA"/>
+                        </Style>
+                    </DataGrid.RowStyle>
+
+                </DataGrid>
+            </Grid>
+            <TextBlock x:Name="texttitle" Margin="268,52.533,178,549.967" FontSize="16" Foreground="#FF38A62D" TextAlignment="Center" FontFamily="Phetsarath OT"/>
+            <TextBlock x:Name="texttitle2" Margin="268,15,178,587.5" FontSize="16" Foreground="#FF38A62D" TextAlignment="Center" FontFamily="Phetsarath OT"/>
+
+        </Grid>
+
+        <Grid Margin="0,643.966,10,0" HorizontalAlignment="Right" Width="70" Height="59" VerticalAlignment="Top">
+            <Rectangle Style="{StaticResource GroupGlass}">
+                <Rectangle.Effect>
+                    <DropShadowEffect/>
+                </Rectangle.Effect>
+            </Rectangle>
+            <Button x:Name="btnBack" Content="ກັບໜ້າຫຼັກ" Click="btnBack_Click"/>
+        </Grid>
+
+    </Grid>
+</Window>
